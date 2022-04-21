@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de cadastro</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="stylesheet" href="assets/styles/form.css">
+    <link rel="stylesheet" href="assets/styles/msg.css">
+    <script type="module" src="assets/scripts/cadastro.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" >
+            <img src="assets/img/new-tab-academy-logo.png" alt="new-tab-academy-logo"
+            class="logo">
+        </a>
+    </header>
+
+
+    <main>
+        
+        <form action="#" id="cadastro">
+
+            <div id="area-msgs"></div>
+
+            <div class="form-input">
+                <label  for="nome">Nome</label>
+                <input type="text" id="nome"
+                autocomplete="off"
+                placeholder="Seu nome completo" >
+            </div>
+
+            <div class="form-input">
+                <label for="telefone">Telefone</label>
+                <input autocomplete="off" type="tel" id="telefone" 
+              
+                placeholder="(xx) 9xxxx-xxxx" >
+            </div>
+
+            <div class="form-input radios">
+
+                <div>
+                    <label>Experiência Prévia</label>
+                </div>
+
+                <div>
+                    <input type="radio" name="exp" id="exp-s" value="true" checked>
+                    <label for="exp-s">Sim</label>
+                </div>
+
+                <div>
+                    <input type="radio" name="exp" id="exp-n" value="false">
+                    <label for="exp-n">Não</label>
+                </div>
+            </div>
+
+            <div class="form-input">
+                <input type="submit" value="Salvar">
+            </div>
+        </form>
+        
+    </main>
+
+    <footer>
+        <p>Todos os direitos reservados.</p>
+    </footer>
+    
+</body>
+</html>
